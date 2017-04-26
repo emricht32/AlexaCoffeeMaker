@@ -1,4 +1,4 @@
-https://github.com/nanpy/nanpy -> Control and arduino as a slave using Python
+https://github.com/nanpy/nanpy -> Control an arduino as a slave using Python
 https://ngrok.com/ - needs token, Creates public url that will port traffic to localhost:port
 http://arduinobasics.blogspot.com/2014/09/relay-module.html - wiring up a relay to an Arduino
 https://github.com/rlisle/alexaParticleBridge - Adopted Lambda function code from here
