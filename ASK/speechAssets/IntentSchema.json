@@ -1,0 +1,16 @@
+{
+ "intents": [
+ {
+  "intent": “CoffeeMakerIntent",
+   "slots": [
+   {
+    "name": "command",
+    "type": "LIST_OF_COMMANDS"
+   }
+  ]
+ },
+ {
+  "intent": "AMAZON.HelpIntent"
+ }
+ ]
+}

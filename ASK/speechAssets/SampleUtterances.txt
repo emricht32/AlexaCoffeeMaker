@@ -1,0 +1,6 @@
+CoffeeMakerIntent {command}
+CoffeeMakerIntent turn {command}
+CoffeeMakerIntent to turn {command}
+CoffeeMakerIntent thing {command}
+CoffeeMakerIntent turn thing {command}
+CoffeeMakerIntent to turn thing {command}
