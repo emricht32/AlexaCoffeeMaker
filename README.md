@@ -1,4 +1,7 @@
 # AlexaCoffeeMaker
+
+![hardware](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/all_hardware.JPG?raw=true)
+
 Controlling a Coffee Maker via Alexa using a RaspberryPi and an Arduino
 
 This is a work in progress.  Not all of the functionality that I would like to have is part of this yet but Alexa will at least turn on my coffee machine and brew a cup of coffeeAlexa.
@@ -93,6 +96,11 @@ Now we have all of the software set up, its time to wire up the hardware.  There
 
 __Arduino to Relay__
 
+![Side 1](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/arduino_side_1.JPG?raw=true)  ![Side 2](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/arduino_side_2.JPG?raw=true)
+
+![Relay](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/relay.JPG?raw=true)
+
+
 Arduino pin   | Wire color    | Relay connection
 ------------- | ------------- | -------------
 5V            | Red				| VCC
@@ -100,6 +108,11 @@ GND           | Black			| GND
 Digital pin 8 | Orange			| IN1
 
 __Relay to Coffee Maker button__
+
+![Power overview](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/coffee_power_overview.JPG?raw=true)
+![Power back](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/coffee_power_back.JPG?raw=true)
+![Power front](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/coffee_power_front.JPG?raw=true)
+
 
 Because I didnt know what I was doing at first, with the coffee maker, I actually took apart the whole thing.  It was a bit of a pain because the screws on the bottom had a wierd three prong star head.  I ended up using a small flat head screw driver that I forced to fit.  After I opened it up, I saw that all I needed to do was to pop the button out, which can easily be done with a flat head screw driver.
 
