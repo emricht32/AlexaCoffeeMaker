@@ -3,11 +3,11 @@ Controlling a Coffee Maker via Alexa using a RaspberryPi and an Arduino
 
 This is a work in progress.  Not all of the functionality that I would like to have is part of this yet but Alexa will at least turn on my coffee machine and brew a cup of coffeeAlexa.
 
-See it working [here] (https://www.youtube.com/watch?v=mDmpJ5b01Jk).
+See it working [here](https://www.youtube.com/watch?v=mDmpJ5b01Jk).
 
 A few assumptions before we begin.  This tutorial assumes you have used a Raspberry Pi and Arduino before, and that you are familiar with using that command line.  You dont need to know much about coding in Node.js or Python, the two languages used as the code is written already but some understanding may be useful.
 
-###Hardware
+**Hardware**
 
 1. Raspberry Pi 3
 2. Arduino Uno
@@ -16,7 +16,7 @@ A few assumptions before we begin.  This tutorial assumes you have used a Raspbe
 5. 5 wires
 6. Farberware Coffee Maker (Really any simple coffee maker that has a push button start will likely work)
 
-###Workflow
+**Workflow**
 
 When everything is set up, the flow of instructions from user to hot coffee goes like this:
 
@@ -29,7 +29,7 @@ When everything is set up, the flow of instructions from user to hot coffee goes
 6. The Arduino then sends a signal to a relay that is connected to the `On` button of the coffee maker.
 7. About a minute later, hot coffee  is pouring into our cup.
 
-#Lets Get Started
+**Lets Get Started**
 
 All code for this project can be found on [Github](https://github.com/emricht32/AlexaCoffeeMaker).  Im not going to write how to set up AWS, Alexa or nanpy.  There are some excellent tutorials (which I used) that do a way better and more thurough job then I ever could.  
 
@@ -39,7 +39,7 @@ AWS and Alexa Skills setup (along with code I ended up modifying for this) can b
 
 One note if you use the tutorial above for setting up the Alexa Skill.  The tutorial uses Particle to turn things on and off, so the commands that are set up for the Alexa Skill are `on` and `off`.  We dont want to use Particle, we want to control our coffee maker.  The current state of this tutorial is such that it is not programmed for `off` though it could be easily adapted to add this fuctionality.  Also, I used the keyword `brew` for my command.  Towards the end of the Particle tutorial in the __Setup Skill in the Develop Portal__ in steps 6 and 7, replace the word `Particle` with `Coffee Maker` and in the __Interaction Model__ section, step 4, use the text `CoffeeMakerIntent brew` instead of the values given.
 
-#ngrok
+**ngrok**
 
 Using the Raspberry Pi navigate to [https://ngrok.com/](https://ngrok.com/).  Click the download button and select the 32-bit platforms option and select the Linux 32-bit download (this tutorial assumes you are running Raspian on your Pi, Raspian is a Linux variant).
  
@@ -66,7 +66,7 @@ Copy the hex right before `.ngrok` on the line that says `Forwarding`.  In our c
 
 Save the file, zip it with AlexaSkill.js and upload it to the Alexa Skill in AWS and save it in amazon.
 
-#nanpy
+**nanpy**
 
 [Here](https://pypi.python.org/pypi/nanpy) are the instructions for nanpy.  There are two parts.  Putting the slave firmware on the Arduino and installing the library that is needed for the Pi.  The following is taken from the __How to build and install__ section of the nanpy page:
 
@@ -87,7 +87,7 @@ To install Nanpy Python library on your master device just type:
 pip install nanpy
 ```
 
-#Hardware
+**Hardware**
 
 Now we have all of the software set up, its time to wire up the hardware.  There are two steps.  Wire the Arduino to the relay and wire the relay to the coffee machine start button.  The only relay that I had was an 8 channel relay so that's what I used.  This could be done with one relay.  Also the only relay image I could find was that of a 4 channel relay in the picture below.  I hope it doesnt cause too much confusion.
 
@@ -108,7 +108,7 @@ Relay connection   | Wire color    | Coffee Maker button connection
 Common        | Green			| Key
 NC          	 | Yellow			| GND
 
-#Make some coffee
+**Make some coffee**
 
 Thats it!  Now all we have to do is start the python server on our Raspberry Pi and we can test with Alexa.  Start the server by running the command.
 
@@ -119,4 +119,4 @@ Double check that ngrok is still running and that you have modified the index.js
 
 Now all you have to do is say "Alexa, tell coffee maker brew" and you should see the blue light on the coffee On switch turn on, the water will get warm (Hope you didnt forget the water), and in about one minute it will pour you your coffee.
 
-Cheers
+Cheers
