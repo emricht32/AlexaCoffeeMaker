@@ -16,11 +16,6 @@ def start_brew():
     
     return None
 
-@auth.get_password
-def get_password(username):
-    if username == 'jon':
-        return 'emrich'
-    return None
 
 @auth.error_handler
 def unauthorized():
