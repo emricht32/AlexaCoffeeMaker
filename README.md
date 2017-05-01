@@ -91,7 +91,7 @@ pip install nanpy
 
 Now we have all of the software set up, its time to wire up the hardware.  There are two steps.  Wire the Arduino to the relay and wire the relay to the coffee machine start button.  The only relay that I had was an 8 channel relay so that's what I used.  This could be done with one relay.  Also the only relay image I could find was that of a 4 channel relay in the picture below.  I hope it doesnt cause too much confusion.
 
-###Arduino to Relay
+__Arduino to Relay__
 
 Arduino pin   | Wire color    | Relay connection
 ------------- | ------------- | -------------
@@ -99,7 +99,7 @@ Arduino pin   | Wire color    | Relay connection
 GND           | Black			| GND
 Digital pin 8 | Orange			| IN1
 
-###Relay to Coffee Maker button
+__Relay to Coffee Maker button__
 
 Because I didnt know what I was doing at first, with the coffee maker, I actually took apart the whole thing.  It was a bit of a pain because the screws on the bottom had a wierd three prong star head.  I ended up using a small flat head screw driver that I forced to fit.  After I opened it up, I saw that all I needed to do was to pop the button out, which can easily be done with a flat head screw driver.
 
@@ -119,4 +119,4 @@ Double check that ngrok is still running and that you have modified the index.js
 
 Now all you have to do is say "Alexa, tell coffee maker brew" and you should see the blue light on the coffee On switch turn on, the water will get warm (Hope you didnt forget the water), and in about one minute it will pour you your coffee.
 
-Cheers
+Cheers
