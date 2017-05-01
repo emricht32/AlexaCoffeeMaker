@@ -92,12 +92,14 @@ pip install nanpy
 
 **Hardware**
 
-Now we have all of the software set up, its time to wire up the hardware.  There are two steps.  Wire the Arduino to the relay and wire the relay to the coffee machine start button.  The only relay that I had was an 8 channel relay so that's what I used.  This could be done with one relay.  Also the only relay image I could find was that of a 4 channel relay in the picture below.  I hope it doesnt cause too much confusion.
+Now we have all of the software set up, its time to wire up the hardware.  There are two steps.  Wire the Arduino to the relay and wire the relay to the coffee machine start button.  The only relay that I had was an 8 channel relay so that's what I used.  This could be done with one relay.  Also the only relay image I could find was that of a 4 channel relay in the picture below.  I hope it doesnt cause too much confusion.  Here is a diagram of how the wiring should go:
+
+![Relay and button](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/ArduinoCoffee.png?raw=true)
 
 __Arduino to Relay__
 
-![Side 1](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/arduino_side_1.JPG?raw=true)  ![Side 2](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/arduino_side_2.JPG?raw=true)
 
+![Side 1](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/arduino_side_1.JPG?raw=true)  ![Side 2](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/arduino_side_2.JPG?raw=true)
 ![Relay](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/relay.JPG?raw=true)
 
 
@@ -109,6 +111,7 @@ Digital pin 8 | Orange			| IN1
 
 __Relay to Coffee Maker button__
 
+![Relay and button](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/relay_and_button.JPG?raw=true)
 ![Power overview](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/coffee_power_overview.JPG?raw=true)
 ![Power back](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/coffee_power_back.JPG?raw=true)
 ![Power front](https://github.com/emricht32/AlexaCoffeeMaker/blob/master/images/coffee_power_front.JPG?raw=true)
@@ -120,6 +123,8 @@ Relay connection   | Wire color    | Coffee Maker button connection
 ------------- | ------------- | -------------
 Common        | Green			| Key
 NC          	 | Yellow			| GND
+
+You can solder the wires to the back of the button.  I dont trust my soldering skills so I simply used a hot glue gun to keep the points connected.  This probably isnt the best thing to do but with zero soldering experience, its good enough for now.
 
 **Make some coffee**
 
